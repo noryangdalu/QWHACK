@@ -14,6 +14,8 @@ def layout():
   return render_template("layout.html")
 
 
+# When using hrefs, make the @app.route the name of the html file if not that shit aint working :((
 @app.route("/menu.html")
 def menu():
   return render_template("menu.html")
+
