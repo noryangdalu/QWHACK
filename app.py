@@ -1,8 +1,8 @@
 from flask import Flask, render_template, request, redirect
 
-app = Flask(_name_)
+app = Flask(__name__)
 
-if _name_ == "_main_":
+if __name__ == "_main_":
     app.run(debug=True)
 
 @app.route("/")
