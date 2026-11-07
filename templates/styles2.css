@@ -1,0 +1,11 @@
+div {
+	height: 400px;
+	width: 600px;
+	background-color: #ffcc99;
+	display: block;
+	margin: auto;
+}
+
+h1 {
+	text-align: center;
+}
