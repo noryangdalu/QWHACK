@@ -1,6 +1,9 @@
 from flask import Flask, render_template, request, redirect
 
-app = Flask(__name__)
+app = Flask(_name_)
+
+if _name_ == "_main_":
+    app.run(debug=True)
 
 @app.route("/")
 def index():
@@ -9,4 +12,3 @@ def index():
 @app.route("/layout")
 def layout():
   return render_template("layout.html")
-
