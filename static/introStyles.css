@@ -1,0 +1,34 @@
+#Portal {
+	width: 500px;
+	height: 500px;
+	margin: auto;
+	position: relative;
+	
+	background-image: url('portalBack.png');
+	background-position:center;
+	background-size:cover
+}
+
+#Portal img {
+	width: 500px;
+	height: 500px;
+	object-fit: cover;
+	display: block;
+	transition: transform 2s ease;
+}
+
+#Portal:hover img {
+	transform: scale(2) rotate(180deg);
+}
+
+h1 {
+	text-align: center;
+	color: #ffffff;
+}
+
+body {
+	background-image: url('introLibrary.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+	
