@@ -23,4 +23,12 @@
 
 h1 {
 	text-align: center;
+	color: #ffffff;
 }
+
+body {
+	background-image: url('introLibrary.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+	

@@ -1,0 +1,21 @@
+div {
+	width: 600px;
+	height: 400px;
+	background-color: #ffcc99;
+	display: block;
+	margin: auto;
+	border: 4px dashed #663300;
+	border-radius: 16px;
+}
+
+h1 {
+	text-align: center;
+	color: #ffffff;
+}
+
+body {
+	background-image: url('menuLibrary.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+	
