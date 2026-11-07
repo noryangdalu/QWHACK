@@ -6,3 +6,7 @@ app = Flask(__name__)
 def index():
   return render_template("intro.html")
 
+@app.route("/layout")
+def layout():
+  return render_template("layout.html")
+
