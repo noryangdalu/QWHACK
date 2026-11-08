@@ -2,16 +2,12 @@ from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     app.run(debug=True)
 
 @app.route("/")
 def index():
   return render_template("intro.html")
-
-@app.route("/layout")
-def layout():
-  return render_template("layout.html")
 
 
 # When using hrefs, make the @app.route the name of the html file if not that shit aint working :((
@@ -19,3 +15,10 @@ def layout():
 def menu():
   return render_template("menu.html")
 
+@app.route("/anansi.html")
+def anansi():
+   return render_template("anansi.html")
+
+@app.route("/layout.html")
+def layout():
+   return render_template("layout.html")
