@@ -1,23 +1,35 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
 body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	margin: 0;
-	min-height: 100vh;
+	height: 100vh;
+	display: flex;                       /* stack title, book and controls vertically */
+	flex-direction: column;
+	overflow: hidden;                    /* no scrolling */
 	font-family: 'IM Fell English', Georgia, 'Times New Roman', serif;
 	color: #3b2a14;
 }
 
 /* ---------- Title ---------- */
 .story-title {
+	flex: 0 0 auto;
 	font-family: 'IM Fell English SC', Georgia, serif;
 	font-weight: normal;
 	text-align: center;
-	font-size: 2.4rem;
+	font-size: clamp(1.4rem, 4.5vh, 2.4rem);   /* shrinks on short windows */
 	letter-spacing: 0.06em;
 	color: #4a2f12;
 	margin: 0;
-	padding: 20px 80px 0;                 /* side padding keeps it clear of the menu button */
+	padding: 1.5vh 80px 0;
 	animation: fadeDown 1s ease-out both;
 }
 
@@ -46,14 +58,16 @@ body {
 
 /* ---------- Book layout ---------- */
 #book {
+	flex: 1 1 0;                         /* takes all the space between title and buttons */
+	min-height: 0;                       /* lets it shrink instead of pushing the page taller */
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: auto 1fr;
+	grid-template-rows: auto minmax(0, 1fr);   /* text row = its content, image row = the rest */
 	column-gap: 40px;
 	width: 94%;
 	max-width: 1700px;
 	margin: 0 auto;
-	padding: 16px 0 8px;
+	padding: 1vh 0 0;
 }
 
 .page {
@@ -61,17 +75,18 @@ body {
 	grid-row: span 2;
 	grid-template-rows: subgrid;
 	min-width: 0;
+	min-height: 0;
 }
 
 .page-text {
 	align-self: start;
-	padding: 0 16px 12px;
-	font-size: 1.5rem;
-	line-height: 1.5;
+	padding: 0 16px 1vh;
+	font-size: clamp(0.95rem, 2.3vh, 1.4rem);  /* scales with window height */
+	line-height: 1.4;
 }
 
 .page-text p {
-	margin: 0 0 0.6em;
+	margin: 0 0 0.5em;
 }
 
 /* ---------- Word-by-word text animation ---------- */
@@ -98,19 +113,19 @@ body {
 
 /* ---------- Images ---------- */
 .page-image {
-	height: 58vh;
+	min-height: 0;                       /* no fixed height: fills the leftover row */
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 8px;
-	box-sizing: border-box;
+	padding: 4px;
 	animation: fadeIn 1.2s ease-out both;
 }
 
 .page-image img {
-	height: 100%;
-	width: auto;
+	max-height: 100%;
 	max-width: 100%;
+	width: auto;
+	height: auto;
 	object-fit: contain;
 	background-color: #000000;
 	border-radius: 20px;
@@ -118,11 +133,12 @@ body {
 
 /* ---------- Controls ---------- */
 .controls {
+	flex: 0 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 16px;
-	padding: 12px 0 24px;
+	padding: 1vh 0 1.5vh;
 	font-size: 1.2rem;
 }
 
@@ -139,6 +155,18 @@ body {
 
 .controls button:hover {
 	background-color: #7a4f24;
+}
+
+/* On narrow screens (phones) there isn't room for two pages, so allow scrolling */
+@media (max-width: 800px) {
+	body {
+		height: auto;
+		min-height: 100vh;
+		overflow: auto;
+	}
+	.page-image {
+		height: 40vh;
+	}
 }
 
 /* Respect people who turn animations off in their OS settings */
