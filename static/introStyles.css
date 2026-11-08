@@ -24,11 +24,18 @@
 h1 {
 	text-align: center;
 	color: #ffffff;
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 20px;
+	padding: 15px 30px;
+	width: fit-content;
+	margin: 20px auto;
 }
 
 body {
-	background-image: url('introLibrary.jpg');
+	
+	background-image:
+		linear-gradient(rgba(0, 0, 0, 0.5), rgba(125, 45, 167, 0.5)),
+		url('introLibrary.jpg');
 	background-repeat: no-repeat;
-	background-size: cover;
-}
+	background-size: cover;}
 	
