@@ -79,15 +79,15 @@ STORIES = {
         "pages": [
             {"text":["In ancient times, ten scorching suns rose into the sky and boiled the Earth, causing terrible hardship for people.",
                      "A skilled archer named Houyi shot down nine of the suns with his bow and arrow, leaving just one."],
-                      "image":"ladyofthemoon.png"},
+                      "image":"suns.png"},
             {"text":["For saving the world, Houyi was rewarded with an elixir of immortality. He planned to share it with his beloved wife, Chang'e, and hid it at home."],
-                     "image":"ladyofthemoon.png"},
+                     "image":"elixir.png"},
             {"text":["While Houyi was away, an unknown man tried to force Chang'e to hand over the potion. To keep it from falling into the wrong hands, Chang'e drank the entire elixir herself. Her body became weightless, and she floated up into the heavens.",
                      "She chose the Moon as her home so she could remain as close to her husband as possible."],
-                     "image":"ladyofthemoon.png"},
+                     "image":"breakin.png"},
             {"text":["On the moon, she is accompanied by a jade rabbit that grinds herbs and a man chopping down a cassia tree.",
                      "Heartbroken, Houyi displayed Chang'e's favorite fruits and cakes out in the open."],
-                     "image":"ladyofthemoon.png"}],
+                     "image":"moon.png"}],
     },
 }
 
