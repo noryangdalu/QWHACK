@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
+app.secret_key = "26e22b8361674245cead27043c7dab8a8d074ab348413f9c69c926b096550532"
 
 if __name__ == "__main__":
     app.run(debug=True)
@@ -19,6 +20,12 @@ def menu():
 def anansi():
    return render_template("anansi.html")
 
-@app.route("/layout.html")
+@app.route("/layout.html",methods=['GET','POST'])
 def layout():
-   return render_template("layout.html")
+   counter = 0
+   if request.method == 'GET':
+      counter = request.form['incre']
+      
+      return
+   else:
+    return render_template("layout.html")
