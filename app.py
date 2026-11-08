@@ -30,6 +30,28 @@ STORIES = {
                       "image": "vsskygod.jpeg"},
         ],
     },
+    "koscheideathless": {
+        "title": "Koschei the Deathless",
+        "background": "page_template.jpg",
+        "pages": [
+            {"text":["Prince Ivan Tsarevish weds the warrior queen Marya Morevna.",
+                     "Prior to Marya heading off to war, she warns Ivan about a specific closet, telling him not to open it."],
+                     "image":"koschei.gif"},
+            {"text":["Ivan does not heed Marya's warning and opens the closest, where he finds the emaciated skeletal sorcerer Koschei the Deathless chained inside."],
+             "image":"koschei.gif"},
+            {"text":["Koschei begs Ivan for water, and drinks three bucketfuls once he receives some.", 
+                     "His strength recovers and he immediately frees himself from his chains."],
+                     "image":"koschei.gif"},
+            {"text":["Koschei then kidnaps Marya, and Ivan sets out to rescue her, but is killed and chopped to pieces by Koschei."],
+             "image":"koschei.gif"},
+            {"text":["Ivan's three magical bird brother-in-laws, a falcon, eagle and raven, sprinkle him with the Waters of Life and Death, resurrecting him."],
+            "image":"koschei.gif"},
+            {"text":["Ivan then visits the witch Baba Yaga to acquire a magical, lightning-fast horse, capable of outrunning Koschei.",
+                     "With the help of the animals he'd spared along the way, Ivan succeeds."],
+                     "image":"koschei.gif"},
+            {"text":["Riding his new magic steed, Ivan confronts Koschei and finishes him off, rescuing Marya Morevna for good."],
+             "image":"koschei.gif"} ]
+    }
 }
 
 
