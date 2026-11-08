@@ -1,27 +1,150 @@
-#book {
-    max-width: 100%;
-}
-
 body {
-	background-image: url('page_template.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
+	margin: 0;
+	min-height: 100vh;
+	font-family: 'IM Fell English', Georgia, 'Times New Roman', serif;
+	color: #3b2a14;
 }
 
-#fireplace_link {
-	width: 600px;
-	height: 400px;
-	box-sizing: border-box;   /* border and padding count inside the 600x400 */
-	padding: 16px;            /* breathing room around the spider */
+/* ---------- Title ---------- */
+.story-title {
+	font-family: 'IM Fell English SC', Georgia, serif;
+	font-weight: normal;
+	text-align: center;
+	font-size: 2.4rem;
+	letter-spacing: 0.06em;
+	color: #4a2f12;
+	margin: 0;
+	padding: 20px 80px 0;                 /* side padding keeps it clear of the menu button */
+	animation: fadeDown 1s ease-out both;
+}
+
+/* ---------- Return to menu button ---------- */
+.menu-btn {
+	position: fixed;
+	top: 16px;
+	left: 16px;
+	z-index: 10;
+	padding: 8px 16px;
+	font-family: 'IM Fell English', Georgia, serif;
+	font-size: 1.1rem;
+	color: #f6e7c8;
+	background-color: #5a3a1a;
+	border: 2px solid #3b2a14;
+	border-radius: 10px;
+	text-decoration: none;
+	transition: background-color 0.2s, transform 0.2s;
+}
+
+.menu-btn:hover {
+	background-color: #7a4f24;
+	color: #fff;
+	transform: translateX(-3px);
+}
+
+/* ---------- Book layout ---------- */
+#book {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto 1fr;
+	column-gap: 40px;
+	width: 94%;
+	max-width: 1700px;
+	margin: 0 auto;
+	padding: 16px 0 8px;
+}
+
+.page {
+	display: grid;
+	grid-row: span 2;
+	grid-template-rows: subgrid;
+	min-width: 0;
+}
+
+.page-text {
+	align-self: start;
+	padding: 0 16px 12px;
+	font-size: 1.5rem;
+	line-height: 1.5;
+}
+
+.page-text p {
+	margin: 0 0 0.6em;
+}
+
+/* ---------- Word-by-word text animation ---------- */
+.word {
+	display: inline-block;
+	opacity: 0;
+	animation: wordIn 0.6s ease-out forwards;
+}
+
+@keyframes wordIn {
+	from { opacity: 0; transform: translateY(8px); filter: blur(3px); }
+	to   { opacity: 1; transform: translateY(0);   filter: blur(0); }
+}
+
+@keyframes fadeDown {
+	from { opacity: 0; transform: translateY(-12px); }
+	to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+/* ---------- Images ---------- */
+.page-image {
+	height: 58vh;
 	display: flex;
-	justify-content: center;  /* horizontal centring */
-	align-items: center;      /* vertical centring */
+	justify-content: center;
+	align-items: center;
+	padding: 8px;
+	box-sizing: border-box;
+	animation: fadeIn 1.2s ease-out both;
 }
 
-#fireplace_link img {
+.page-image img {
+	height: 100%;
+	width: auto;
 	max-width: 100%;
-	max-height: 100%;
-	object-fit: scale-down;      /* keeps the aspect ratio, no squashing */
-	background-color:#000000
+	object-fit: contain;
+	background-color: #000000;
 	border-radius: 20px;
+}
+
+/* ---------- Controls ---------- */
+.controls {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	padding: 12px 0 24px;
+	font-size: 1.2rem;
+}
+
+.controls button {
+	font-family: 'IM Fell English', Georgia, serif;
+	font-size: 1.1rem;
+	padding: 6px 18px;
+	color: #f6e7c8;
+	background-color: #5a3a1a;
+	border: 2px solid #3b2a14;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.controls button:hover {
+	background-color: #7a4f24;
+}
+
+/* Respect people who turn animations off in their OS settings */
+@media (prefers-reduced-motion: reduce) {
+	.word, .story-title, .page-image {
+		animation: none;
+		opacity: 1;
+	}
 }

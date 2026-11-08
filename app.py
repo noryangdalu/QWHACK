@@ -1,31 +1,73 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, url_for, session, abort
 
 app = Flask(__name__)
 app.secret_key = "26e22b8361674245cead27043c7dab8a8d074ab348413f9c69c926b096550532"
 
-if __name__ == "__main__":
-    app.run(debug=True)
+STORIES = {
+    "anansi": {
+        "title": "Anansi and the Box of Stories",
+        "background": "page_template.jpg",
+        "pages": [
+            {"text": ['"There once was a time when the Sky God, Nyame, kept all stories locked up in a box."',
+                    "A spider, Anansi, asked to buy them from Nyame.",],
+                    "image": "anansi1.gif"},
+            {"text": ["Nyame responded with a seemingly impossible price for Anansi to pay.", 
+                      "Nyame wanted Anansi to bring him Onini the python"],
+                        "image": "snake.gif"},  
+            {"text": ["Osebo the leopard,"],
+                      "image": "leopard.gif"},
+            {"text": ["the Mmboro hornets and Mmoatia the invisible forest fairy."],
+                      "image": "beetalk.gif"},     
+            {"text": ["Anansi used his wit instead of his strength to capture all 4.", 
+                      "He tricked the python into tying himself to a pole, trapped the leopard in a pit, lured the hornets into a gourd and caught the fairy with a sticky gun doll."], 
+                      "image": "victims.gif"},
+            {"text": ["Anansi impressed Nyame, and the Sky God held up his end of the deal and gave Anansi the stories.", 
+                      "Anansi then scattered them across the world for everyone to share."], 
+                      "image": "vsskygod.jpeg"},
+        ],
+    },
+}
+
+
+def make_spreads(pages):
+    return [pages[i:i + 2] for i in range(0, len(pages), 2)]
+
 
 @app.route("/")
 def index():
-  return render_template("intro.html")
+    return render_template("intro.html")
 
 
-# When using hrefs, make the @app.route the name of the html file if not that shit aint working :((
 @app.route("/menu.html")
 def menu():
-  return render_template("menu.html")
+    return render_template("menu.html")
 
-@app.route("/anansi.html")
-def anansi():
-   return render_template("anansi.html")
 
-@app.route("/layout.html",methods=['GET','POST'])
-def layout():
-   counter = 0
-   if request.method == 'GET':
-      counter = request.form['incre']
-      
-      return
-   else:
-    return render_template("layout.html")
+@app.route("/story/<slug>", methods=["GET", "POST"])
+def story(slug):
+    data = STORIES.get(slug)
+    if data is None:
+        abort(404)
+
+    spreads = make_spreads(data["pages"])
+    key = f"counter_{slug}"
+
+    if request.method == "POST":
+        step = request.form.get("incre")
+        if step in ("1", "-1"):
+            session[key] = (session.get(key, 0) + int(step)) % len(spreads)
+        return redirect(url_for("story", slug=slug))
+
+    counter = session.get(key, 0) % len(spreads)
+    return render_template(
+        "layout.html",
+        story=data,
+        slug=slug,
+        spread=spreads[counter],
+        counter=counter,
+        total=len(spreads),
+    )
+
+
+if __name__ == "__main__":
+    app.run(debug=True)

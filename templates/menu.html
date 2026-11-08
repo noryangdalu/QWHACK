@@ -6,9 +6,9 @@
   </head>
   <body>
     <h1>CHOOSE YOUR WORLD</h1><br>
-    <a href="layout.html">
+    <a href="{{ url_for('story', slug='anansi') }}">
       <div id="anansi_link">
-        <img src = "{{ url_for('static', filename='anansitalk.gif')}}" >
+        <img src="{{ url_for('static', filename='anansitalk.gif') }}">
       </div>
     </a>
   </body>  
