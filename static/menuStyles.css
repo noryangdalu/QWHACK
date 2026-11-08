@@ -15,6 +15,7 @@ h1 {
     font-size: 42px;
     font-style: oblique;
     font-weight: bold;
+    font-family: Chalkduster, fantasy;
 	
     text-decoration: underline;
     letter-spacing: 3px;
@@ -33,7 +34,7 @@ h1 {
 }
 
 #anansi_link img,
-#Koschei_link img, #Yuki-onna_link img {
+#Koschei_link img, #Yuki-onna_link img, #LadyMoon_link img {
     display: block;
     width: 200px;
     height: auto;
@@ -43,7 +44,7 @@ h1 {
 }
 
 #anansi_link img:hover,
-#Koschei_link img:hover, #Yuki-onna_link img:hover {
+#Koschei_link img:hover, #Yuki-onna_link img:hover, #LadyMoon_link img:hover {
     transform: scale(1.05);
 
 }

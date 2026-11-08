@@ -27,7 +27,7 @@ STORIES = {
                       "image": "victims.gif"},
             {"text": ["Anansi impressed Nyame, and the Sky God held up his end of the deal and gave Anansi the stories.", 
                       "Anansi then scattered them across the world for everyone to share."], 
-                      "image": "vsskygod.jpeg"},
+                      "image": "vsskygod.jpeg"}
         ],
     },
     "koscheideathless": {
@@ -50,10 +50,10 @@ STORIES = {
                      "With the help of the animals he'd spared along the way, Ivan succeeds."],
                      "image":"koschei5.jpeg"},
             {"text":["Riding his new magic steed, Ivan confronts Koschei and finishes him off, rescuing Marya Morevna for good."],
-             "image":"koschei6.jpeg"} ]
+             "image":"koschei6.jpeg"},], 
     },
-    "yuki-onna":{
-        "title": "Yuki-Onna",
+    "yuki-onna": {
+        "title": "Yuki-onna",
         "background": "page_template.jpg",
         "pages": [
             {"text":["Two woodcutters, an old man named Mosaku and a young apprentice named Minokichi, are caught in a severe mountain snowstorm in the Japanese alps, when they take shelter in an abandoned ferry hut."],
@@ -71,8 +71,24 @@ STORIES = {
                      "image":"yukionna.gif"},
             {"text":["O-Yuki suddenly stands up, drops her disguise, and reveals that she was the Yuki-Onna who spared him.",
                      "She rebukes him for breaking his solemn promise, saying she would kill him if not for the sake of their children, and then melts into a cold, white mist that drifts up through the chimney and vanishes into the night forever."],
-                     "image":"yukionna.gif"}]
-    }
+                     "image":"yukionna.gif"}],
+    },
+    "ladyofthemoon": {
+        "title": "Lady Of The Moon",
+        "background": "page_template.jpg",
+        "pages": [
+            {"text":["In ancient times, ten scorching suns rose into the sky and boiled the Earth, causing terrible hardship for people.",
+                     "A skilled archer named Houyi shot down nine of the suns with his bow and arrow, leaving just one."],
+                      "image":"ladyofthemoon.png"},
+            {"text":["For saving the world, Houyi was rewarded with an elixir of immortality. He planned to share it with his beloved wife, Chang'e, and hid it at home."],
+                     "image":"ladyofthemoon.png"},
+            {"text":["While Houyi was away, an unknown man tried to force Chang'e to hand over the potion. To keep it from falling into the wrong hands, Chang'e drank the entire elixir herself. Her body became weightless, and she floated up into the heavens.",
+                     "She chose the Moon as her home so she could remain as close to her husband as possible."],
+                     "image":"ladyofthemoon.png"},
+            {"text":["On the moon, she is accompanied by a jade rabbit that grinds herbs and a man chopping down a cassia tree.",
+                     "Heartbroken, Houyi displayed Chang'e's favorite fruits and cakes out in the open."],
+                     "image":"ladyofthemoon.png"}],
+    },
 }
 
 
