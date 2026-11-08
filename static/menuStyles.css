@@ -11,6 +11,8 @@ div {
 h1 {
 	text-align: center;
 	color: #ffffff;
+	position: relative;
+	top: 30px;
 }
 
 body {
@@ -19,8 +21,19 @@ body {
 	background-size: cover;
 }
 
-#anansi_link{
+#anansi_link {
 	width: 600px;
 	height: 400px;
+	box-sizing: border-box;   /* border and padding count inside the 600x400 */
+	padding: 16px;            /* breathing room around the spider */
+	display: flex;
+	justify-content: center;  /* horizontal centring */
+	align-items: center;      /* vertical centring */
+}
+
+#anansi_link img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;      /* keeps the aspect ratio, no squashing */
 }
 	
