@@ -2,9 +2,26 @@
     max-width: 100%;
 }
 
-.pages {
-    display: block;
-    max-width: 100%;
-    height: fit-content;
-    border-radius: 8px;
+body {
+	background-image: url('page_template.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#fireplace_link {
+	width: 600px;
+	height: 400px;
+	box-sizing: border-box;   /* border and padding count inside the 600x400 */
+	padding: 16px;            /* breathing room around the spider */
+	display: flex;
+	justify-content: center;  /* horizontal centring */
+	align-items: center;      /* vertical centring */
+}
+
+#fireplace_link img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: scale-down;      /* keeps the aspect ratio, no squashing */
+	background-color:#000000
+	border-radius: 20px;
 }
