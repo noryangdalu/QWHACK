@@ -22,7 +22,10 @@ def anansi():
 
 @app.route("/layout.html",methods=['GET','POST'])
 def layout():
+   counter = 0
    if request.method == 'GET':
+      counter = request.form['incre']
+      
       return
    else:
     return render_template("layout.html")
