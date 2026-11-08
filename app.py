@@ -51,6 +51,27 @@ STORIES = {
                      "image":"koschei.gif"},
             {"text":["Riding his new magic steed, Ivan confronts Koschei and finishes him off, rescuing Marya Morevna for good."],
              "image":"koschei.gif"} ]
+    },
+    "yuki-onna":{
+        "title": "Yuki-Onna",
+        "background": "page_template.jpg",
+        "pages": [
+            {"text":["Two woodcutters, an old man named Mosaku and a young apprentice named Minokichi, are caught in a severe mountain snowstorm in the Japanese alps, when they take shelter in an abandoned ferry hut."],
+                      "image":"yukionna.gif"},
+            {"text":["In the middle of the night, a tall, pale woman in a white kimono appears.", 
+                     "She breathes her freezing, icy breath onto Mosaku, freezing him to death.",
+                      "She turns to young Minokichi, ready to kill him too, but spares him because she finds him young and handsome.",
+                      "She warns him that if he ever tells a single soul about what happened that night, she will end his life."],
+                     "image":"yukionna.gif"},
+            {"text":["Years later, Minokichi meets a beautiful, pale young woman named O-Yuki, during a snowy evening.",
+                     "They marry, have several children, and live a happy life together while she remarkably never seems to age."],
+                     "image":"yukionna.gif"},
+            {"text":["One evening, while looking at O-Yuki by the lamplight, Minokichi is reminded of his strange encounter from his youth.", 
+                     "After many years, he felt safe to tell her the story as a curious secret, noting how much she resembles the snow spirit."],
+                     "image":"yukionna.gif"},
+            {"text":["O-Yuki suddenly stands up, drops her disguise, and reveals that she was the Yuki-Onna who spared him.",
+                     "She rebukes him for breaking his solemn promise, saying she would kill him if not for the sake of their children, and then melts into a cold, white mist that drifts up through the chimney and vanishes into the night forever."],
+                     "image":"yukionna.gif"}]
     }
 }
 
