@@ -32,11 +32,17 @@ h1 {
 	font-family: Chalkduster, fantasy;
 }
 
+
 body {
-	
+	margin: 0;
+	min-height: 100vh;              /* page is always at least window height */
 	background-image:
 		linear-gradient(rgba(0, 0, 0, 0.5), rgba(125, 45, 167, 0.5)),
 		url('introLibrary.jpg');
 	background-repeat: no-repeat;
-	background-size: cover;}
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;   /* background stays put and covers the window */
+}
+
 	
