@@ -16,7 +16,7 @@ STORIES = {
                         "image": "snake.gif"},  
             {"text": ["Osebo the leopard,"],
                       "image": "leopard.gif"},
-            {"text": ["the Mmboro hornets and Mmoatia the invisible forest fairy."],
+            {"text": ["the Mmboro hornets."],
                       "image": "beetalk.gif"},     
             {"text": ["Anansi used his wit instead of his strength to capture all 4.", 
                       "He tricked the python into tying himself to a pole, trapped the leopard in a pit, lured the hornets into a gourd and caught the fairy with a sticky gun doll."], 
