@@ -36,21 +36,42 @@ STORIES = {
         "pages": [
             {"text":["Prince Ivan Tsarevish weds the warrior queen Marya Morevna.",
                      "Prior to Marya heading off to war, she warns Ivan about a specific closet, telling him not to open it."],
-                     "image":"koschei.gif"},
+                     "image":"koschei1.jpeg"},
             {"text":["Ivan does not heed Marya's warning and opens the closest, where he finds the emaciated skeletal sorcerer Koschei the Deathless chained inside."],
-             "image":"koschei.gif"},
+             "image":"koschei2.jpeg"},
             {"text":["Koschei begs Ivan for water, and drinks three bucketfuls.", 
                      "Once he receives some, his strength recovers and he immediately frees himself from his chains."],
                      "image":"koschei.gif"},
             {"text":["Koschei then kidnaps Marya, and Ivan sets out to rescue her, but is killed and chopped to pieces by Koschei."],
-             "image":"koschei.gif"},
+             "image":"koschei3.jpeg"},
             {"text":["Ivan's three magical bird brother-in-laws, a falcon, eagle and raven, sprinkle him with the Waters of Life and Death, resurrecting him."],
-            "image":"koschei.gif"},
+            "image":"koschei4.jpeg"},
             {"text":["Ivan then visits the witch Baba Yaga to acquire a magical, lightning-fast horse, capable of outrunning Koschei.",
                      "With the help of the animals he'd spared along the way, Ivan succeeds."],
-                     "image":"koschei.gif"},
+                     "image":"koschei5.jpeg"},
             {"text":["Riding his new magic steed, Ivan confronts Koschei and finishes him off, rescuing Marya Morevna for good."],
-             "image":"koschei.gif"} ]
+             "image":"koschei6.jpeg"} ]
+    },
+    "yuki-onna":{
+        "title": "Yuki-Onna",
+        "background": "page_template.jpg",
+        "pages": [
+            {"text":["Two woodcutters, an old man named Mosaku and a young apprentice named Minokichi, are caught in a severe mountain snowstorm in the Japanese alps, when they take shelter in an abandoned ferry hut."],
+                      "image":"yukionna.gif"},
+            {"text":["In the middle of the night, a tall, pale woman in a white kimono appears.", 
+                     "She breathes her freezing, icy breath onto Mosaku, freezing him to death.",
+                      "She turns to young Minokichi, ready to kill him too, but spares him because she finds him young and handsome.",
+                      "She warns him that if he ever tells a single soul about what happened that night, she will end his life."],
+                     "image":"yukionna.gif"},
+            {"text":["Years later, Minokichi meets a beautiful, pale young woman named O-Yuki, during a snowy evening.",
+                     "They marry, have several children, and live a happy life together while she remarkably never seems to age."],
+                     "image":"yukionna.gif"},
+            {"text":["One evening, while looking at O-Yuki by the lamplight, Minokichi is reminded of his strange encounter from his youth.", 
+                     "After many years, he felt safe to tell her the story as a curious secret, noting how much she resembles the snow spirit."],
+                     "image":"yukionna.gif"},
+            {"text":["O-Yuki suddenly stands up, drops her disguise, and reveals that she was the Yuki-Onna who spared him.",
+                     "She rebukes him for breaking his solemn promise, saying she would kill him if not for the sake of their children, and then melts into a cold, white mist that drifts up through the chimney and vanishes into the night forever."],
+                     "image":"yukionna.gif"}]
     }
 }
 
