@@ -30,7 +30,7 @@ h1 {
 }
 
 #anansi_link img,
-#Koschei_link img {
+#Koschei_link img, #Yuki-onna_link img {
     display: block;
     width: 200px;
     height: auto;
@@ -40,6 +40,6 @@ h1 {
 }
 
 #anansi_link img:hover,
-#Koschei_link img:hover {
+#Koschei_link img:hover, #Yuki-onna_link img:hover {
     transform: scale(1.05);
 }
