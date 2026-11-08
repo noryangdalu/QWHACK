@@ -8,10 +8,17 @@
   <body>
     <h1>CHOOSE YOUR WORLD</h1>
 
-    <a href="{{ url_for('story', slug='anansi') }}">
-      <div id="anansi_link">
-        <img src="{{ url_for('static', filename='anansitalk.gif') }}" alt="Anansi World">
-      </div>
-    </a>
+    <div id="story_links">
+      <a href="{{ url_for('story', slug='anansi') }}">
+        <div id="anansi_link">
+          <img src="{{ url_for('static', filename='anansitalk.gif') }}" alt="Anansi World">
+        </div>
+      </a>
+      <a href="{{ url_for('story', slug='koscheideathless') }}">
+        <div id="Koschei_link">
+          <img src="{{ url_for('static', filename='koschei.gif') }}" alt="Koschei World">
+        </div>
+      </a>
+    </div>
   </body>
 </html>

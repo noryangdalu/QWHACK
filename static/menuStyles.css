@@ -1,4 +1,4 @@
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,16 +20,26 @@ h1 {
     color: #f2d6a2;
 }
 
-#anansi_link img {
+/* Puts both links on one row, aligned at the top */
+#story_links {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+    margin-top: 70px;
+}
+
+#anansi_link img,
+#Koschei_link img {
+    display: block;
     width: 200px;
     height: auto;
     border-radius: 12px;
     border: 3px solid #a58b65;
     transition: transform 0.3s;
-    margin-top: 70px;
-    margin-left: 200px;
 }
 
-#anansi_link img:hover {
+#anansi_link img:hover,
+#Koschei_link img:hover {
     transform: scale(1.05);
 }

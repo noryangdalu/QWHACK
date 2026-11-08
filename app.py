@@ -23,7 +23,7 @@ STORIES = {
             {"text": ["and the Mmboro hornets."],
                       "image": "trapbee.gif"},     
             {"text": ["Anansi used his wit instead of his strength to capture all 3.", 
-                      "He tricked the python into tying himself to a pole, trapped the leopard in a pit, lured the hornets into a gourd and caught the fairy with a sticky gun doll."], 
+                      "He tricked the python into tying himself to a pole, trapped the leopard in a pit and lured the hornets into a gourd"], 
                       "image": "victims.gif"},
             {"text": ["Anansi impressed Nyame, and the Sky God held up his end of the deal and gave Anansi the stories.", 
                       "Anansi then scattered them across the world for everyone to share."], 
