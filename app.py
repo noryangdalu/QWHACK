@@ -36,21 +36,21 @@ STORIES = {
         "pages": [
             {"text":["Prince Ivan Tsarevish weds the warrior queen Marya Morevna.",
                      "Prior to Marya heading off to war, she warns Ivan about a specific closet, telling him not to open it."],
-                     "image":"koschei.gif"},
+                     "image":"koschei1.jpeg"},
             {"text":["Ivan does not heed Marya's warning and opens the closest, where he finds the emaciated skeletal sorcerer Koschei the Deathless chained inside."],
-             "image":"koschei.gif"},
+             "image":"koschei2.jpeg"},
             {"text":["Koschei begs Ivan for water, and drinks three bucketfuls.", 
                      "Once he receives some, his strength recovers and he immediately frees himself from his chains."],
                      "image":"koschei.gif"},
             {"text":["Koschei then kidnaps Marya, and Ivan sets out to rescue her, but is killed and chopped to pieces by Koschei."],
-             "image":"koschei.gif"},
+             "image":"koschei3.jpeg"},
             {"text":["Ivan's three magical bird brother-in-laws, a falcon, eagle and raven, sprinkle him with the Waters of Life and Death, resurrecting him."],
-            "image":"koschei.gif"},
+            "image":"koschei4.jpeg"},
             {"text":["Ivan then visits the witch Baba Yaga to acquire a magical, lightning-fast horse, capable of outrunning Koschei.",
                      "With the help of the animals he'd spared along the way, Ivan succeeds."],
-                     "image":"koschei.gif"},
+                     "image":"koschei5.jpeg"},
             {"text":["Riding his new magic steed, Ivan confronts Koschei and finishes him off, rescuing Marya Morevna for good."],
-             "image":"koschei.gif"} ]
+             "image":"koschei6.jpeg"} ]
     },
     "yuki-onna":{
         "title": "Yuki-Onna",

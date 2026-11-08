@@ -6,8 +6,9 @@
     <title>QWHACK</title>
   </head>
   <body>
-    <h1>CHOOSE YOUR WORLD</h1>
-
+    <a href="{{ url_for('index') }}" style="text-decoration:none">
+        <h1>CHOOSE YOUR WORLD</h1>
+    </a>
     <div id="story_links">
       <a href="{{ url_for('story', slug='anansi') }}">
         <div id="anansi_link">
