@@ -51,14 +51,21 @@ def story(slug):
 
     spreads = make_spreads(data["pages"])
     key = f"counter_{slug}"
+    flag = f"turning_{slug}"
 
     if request.method == "POST":
         step = request.form.get("incre")
         if step in ("1", "-1"):
             session[key] = (session.get(key, 0) + int(step)) % len(spreads)
+        session[flag] = True              # tells the next GET "this came from a button"
         return redirect(url_for("story", slug=slug))
 
-    counter = session.get(key, 0) % len(spreads)
+    if session.pop(flag, False):          # came from Next/Back: keep the position
+        counter = session.get(key, 0) % len(spreads)
+    else:                                 # fresh arrival: start at page 1
+        counter = 0
+        session[key] = 0
+
     return render_template(
         "layout.html",
         story=data,
